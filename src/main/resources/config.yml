@@ -1,16 +1,16 @@
-# Source: https://www.spigotmc.org/resources/1-13-1-19-adup-anti-dupe.110062/
-# Discord: https://discord.com/invite/C2PcjPyFJM
-# Docs: https://sungsom.vercel.app/adup-docs
-# Developer: Debion
+# Source: https://www.spigotmc.org/resources/1-13-x-1-20-x-adup-dupe-detection.110062/
+# Discord: https://discord.gg/46R3fmqGJ6
+# Docs: https://github.com/deneonet/adup
+# Developer: Debion / Deneo
 
 permissions:
   # Permission for every permission below
   admin: "adup.admin"
   # Permission to don't track the player (doesn't create logs and doesn't ban/warn)
   track_bypass: "adup.track_bypass"
-  # Permission to bypass the auto ban kick
+  # Permission to bypass the auto ban
   banned_bypass: "adup.banned_bypass"
-  # Permission to bypass the maintenance kick
+  # Permission to bypass the maintenance whitelist
   maintenance_bypass: "adup.maintenance_bypass"
   # Permission to receive alerts
   receive_alerts: "adup.receive.alerts"
@@ -93,8 +93,8 @@ messages:
   # ... if the player doesn't hold an item in the main hand, when executing '/adup tracked add ...'
   no_holding_item: "§5§lADUP §8§l» §7Hold the item to track in your main hand!"
   # ... if the player/console tries to execute a non-existing command or the command is invalid
-  invalid_command_console: "§5§lADUP §8§l» §7Commands\n§5/adup reload\n/adup mce\n/adup tracked add/remove <name>\n/adup info!"
-  invalid_command_player: "§5§lADUP §8§l» §7Commands\n§5/adup logsee <player>\n/adup unban <player>\n/adup reload\n/adup mce\n/adup tracked add/remove <name>\n/adup info\n/adup suspects\n/adup bans\n/adup spectate <player> (inventory/enderchest)!"
+  invalid_command_console: "§5§lADUP §8§l» §7Commands\n§5/adup reload\n/adup mce\n/adup tracked remove <name>"
+  invalid_command_player: "§5§lADUP §8§l» §7Commands\n§5/adup logs <player>\n/adup unban <player>\n/adup reload\n/adup mce\n/adup tracked remove <name>\n/adup tracked add\n/adup suspects\n/adup bans\n/adup spectate <player>"
   # ... if the player tries to remove a tracked item using '/adup tracked remove ...', but the tracked item doesn't exist
   tracked_item_does_not_exists: "§5§lADUP §8§l» §7A tracked item with that name doesn't exists."
   # ... if the player tries to add a tracked item using '/adup tracked add ...', but the tracked item already exists
