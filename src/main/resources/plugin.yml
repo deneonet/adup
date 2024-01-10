@@ -1,0 +1,7 @@
+name: Adup
+version: '${project.version}'
+api-version: 1.13
+main: net.deneo.adup.Adup
+
+commands:
+  adup:
